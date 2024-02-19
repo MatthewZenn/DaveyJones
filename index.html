@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kraken Crypto Exchange</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <h1><img id="logo" src="Assets/logo.png" alt="">Kraken</h1>
+      <button class="buy">Buy Crypto</button>
+      <span class="material-symbols-rounded" id="account">account_circle</span>
+    </header>
+    <div class="panel">
+      <button class="buttons"><span class="material-symbols-rounded" id="home">home</span>Home</button>
+      <button class="buttons"><span class="material-symbols-rounded" id="explore">search</span>Explore</button>
+      <button class="buttons"><span class="material-symbols-rounded" id="transfer">sync_alt</span>Transfer</button>
+      <button class="buttons"><span class="material-symbols-rounded" id="history">schedule</span>Transactions</button>
+    </div>
+    <div class="transfer">
+      <h2>Transfer</h2>
+      <span class="tab">
+        <button class="tabs">Deposit</button>
+        <button class="tabs" id="withdraw">Withdraw</button>
+      </span>
+      <div class="withdraw">
+        <select name="coin" id="coin">
+          <option value="Bitcoin">Bitcoin</option>
+        </select>
+        <span class="networks">
+          <button class="network">Bitcoin Network</button>
+          <button class="network" id="withdraw">Lightning Network</button>
+        </span>
+        <input type="text" id="address">
+        <input type="text" id="ammount">
+        <button id="submit">Withdraw BTC</button>
+      </div>
+    </div>
+    <script src="main.js" async defer></script>
+  </body>
+</html>

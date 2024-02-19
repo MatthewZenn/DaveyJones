@@ -1,0 +1,143 @@
+:root {
+  --color: #5841d8;
+  --family: Celias;
+  --background: #fff;
+}
+
+@font-face {
+  font-family: Celias;
+  src: url(Assets/Celias.otf);
+}
+
+@font-face {
+  font-family: SegoeIcons;
+  src: url(Assets/Segoe\ Fluent\ Icons.ttf);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+h1 {
+  position: absolute;
+  left: 80px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color);
+  font-family: var(--family);
+  font-size: 40px;
+  top: -20px;
+}
+
+#logo {
+  position: relative;
+  width: 40px;
+}
+
+.buy {
+  position: absolute;
+  right: 150px;
+  top: 10px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--color);
+  color: var(--background);
+  font-family: var(--family);
+  font-size: 12pt;
+}
+
+#account {
+  position: absolute;
+  right: 100px;
+  margin: 0;
+  padding: 0;
+  top: 15px;
+  border: none;
+  border-radius: 30px;
+  color: grey;
+  font-size: 22pt;
+  cursor: pointer;
+}
+
+.buy:hover {
+  background-color: #8b76ff;
+  cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  height: 80%;
+  left: 0;
+  width: 15%;
+  top: 20%;
+  background-color: var(--background);
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: var(--background);
+  color: rgb(92, 92, 92);
+  font-family: var(--family);
+  font-size: 14pt;
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 80px;
+  cursor: pointer;
+}
+
+#home {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20pt;
+  padding-right: 15px;
+  color: rgb(184, 184, 184);
+}
+
+#explore {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20pt;
+  padding-right: 15px;
+  color: rgb(184, 184, 184);
+}
+
+#transfer {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20pt;
+  padding-right: 15px;
+  color: rgb(184, 184, 184);
+}
+
+#history {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20pt;
+  padding-right: 15px;
+  color: rgb(184, 184, 184);
+}
+
+.transfer {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%, 0%);
+  display: block;
+}
+
+h2 {
+  font-family: var(--family);
+  font-size: 30pt;
+  font-weight: 100;
+  color: var(--color);
+}
