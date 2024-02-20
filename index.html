@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sparrow Crypto Exchange</title>
+    <title>Calypso Crypto Exchange</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <h1><img id="logo" src="Assets/logo.png" alt="">Sparrow</h1>
+      <h1><img id="logo" src="Assets/logo.png" alt="">Calypso</h1>
       <button class="buy">Buy Crypto</button>
       <span class="material-symbols-rounded" id="dots">more_vert</span>
       <span class="material-symbols-rounded" id="account">person</span>
@@ -40,10 +40,19 @@
           <button class="network">Bitcoin Network</button>
           <button class="network" id="light">Lightning Network</button>
         </span>
+        <input type="text" id="nam" readonly>
         <input type="text" id="address" placeholder="Withdrawl address" readonly>
         <span class="material-symbols-rounded" id="add">add</span>
-        <input type="text" id="ammount" placeholder="Withdrawl amount">
+        <input type="text" id="ammount" placeholder="Withdrawl amount (USD)">
         <button id="submit">Withdraw Coin</button>
+      </div>
+    </div>
+    <div id="modal">
+      <div class="box">
+        <h3 class="label">Add Wallet</h3>
+        <input type="text" id="nail" placeholder="Wallet address">
+        <input type="text" id="person" placeholder="Name">
+        <button id="confirm">Add Wallet</button>
       </div>
     </div>
     <script src="main.js" async defer></script>
