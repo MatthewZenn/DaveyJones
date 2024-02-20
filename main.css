@@ -2,6 +2,9 @@
   --color: #5841d8;
   --family: Celias;
   --background: #fff;
+  --hover: #8b76ff;
+  --accent1: rgb(92, 92, 92);
+  --accent2: rgb(156, 156, 156);
 }
 
 @font-face {
@@ -14,12 +17,22 @@
   src: url(Assets/Segoe\ Fluent\ Icons.ttf);
 }
 
+body, html {
+  margin: 0 auto;
+  background-color: var(--background);
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 80px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+::placeholder {
+  color: var(--accent2);
 }
 
 h1 {
@@ -54,28 +67,28 @@ h1 {
 
 #account {
   position: absolute;
-  right: 100px;
+  right: 80px;
   margin: 0;
   padding: 0;
   top: 15px;
   border: none;
   border-radius: 30px;
-  color: grey;
+  color: var(--accent1);
   font-size: 22pt;
   cursor: pointer;
 }
 
 .buy:hover {
-  background-color: #8b76ff;
+  background-color: var(--hover);
   cursor: pointer;
 }
 
 .panel {
-  position: fixed;
-  height: 80%;
+  position: relative;
+  height: 100%;
   left: 0;
   width: 15%;
-  top: 20%;
+  top: 120px;
   background-color: var(--background);
 }
 
@@ -84,7 +97,7 @@ h1 {
   display: flex;
   width: 100%;
   background-color: var(--background);
-  color: rgb(92, 92, 92);
+  color: var(--accent1);
   font-family: var(--family);
   font-size: 14pt;
   font-weight: bold;
@@ -100,7 +113,7 @@ h1 {
   font-style: normal;
   font-size: 20pt;
   padding-right: 15px;
-  color: rgb(184, 184, 184);
+  color: var(--accent2);
 }
 
 #explore {
@@ -108,7 +121,7 @@ h1 {
   font-style: normal;
   font-size: 20pt;
   padding-right: 15px;
-  color: rgb(184, 184, 184);
+  color: var(--accent2);
 }
 
 #transfer {
@@ -116,7 +129,7 @@ h1 {
   font-style: normal;
   font-size: 20pt;
   padding-right: 15px;
-  color: rgb(184, 184, 184);
+  color: var(--accent2);
 }
 
 #history {
@@ -124,12 +137,12 @@ h1 {
   font-style: normal;
   font-size: 20pt;
   padding-right: 15px;
-  color: rgb(184, 184, 184);
+  color: var(--accent2);
 }
 
 .transfer {
   position: absolute;
-  left: 50%;
+  left: 35%;
   top: 80px;
   transform: translate(-50%, 0%);
   display: block;
@@ -137,7 +150,145 @@ h1 {
 
 h2 {
   font-family: var(--family);
-  font-size: 30pt;
+  font-size: 34pt;
   font-weight: 100;
   color: var(--color);
+}
+
+h3 {
+  font-family: var(--family);
+  font-size: 20pt;
+  font-weight: 100;
+  color: black;
+}
+
+.tabs {
+  position: relative;
+  width: 130px;
+  height: 50px;
+  color: var(--accent2);
+  background-color: var(--background);
+  font-family: var(--family);
+  font-size: 14pt;
+  font-weight: bold;
+  border: none;
+  margin: 0px;
+  cursor: pointer;
+}
+
+#withdraw {
+  color: var(--color);
+  border-bottom: 2px solid var(--color);
+}
+
+.withdrawl {
+  position: relative;
+  top: 20px;
+  display: block;
+}
+
+#coin {
+  position: relative;
+  display: flex;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 236, 236);
+  font-family: var(--family);
+  font-size: 14pt;
+  outline: none;
+  padding: 10px;
+}
+
+.networks {
+  position: relative;
+  top: 20px;
+  height: 35px;
+  width: 400px;
+  display: flex;
+  background: rgb(243, 243, 243);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.network {
+  position: relative;
+  width: 200px;
+  height: 35px;
+  font-family: var(--family);
+  color: black;
+  border: none;
+  background-color: var(--background);
+  box-shadow: 0px 3px 5px rgb(224, 224, 224);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#light {
+  box-shadow: none;
+  color: var(--accent1);
+  background-color: transparent;
+}
+
+#address {
+  position: relative;
+  display: flex;
+  top: 50px;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 236, 236);
+  font-family: var(--family);
+  font-size: 14pt;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#ammount {
+  position: relative;
+  display: flex;
+  top: 40px;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 236, 236);
+  font-family: var(--family);
+  font-size: 14pt;
+  outline: none;
+  padding: 10px;
+}
+
+#submit {
+  position: relative;
+  top: 200px;
+  width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--color);
+  font-family: var(--family);
+  color: var(--background);
+  font-size: 16pt;
+  text-align: center;
+  border: none;
+}
+
+#submit:hover {
+  background-color: var(--hover);
+  cursor: pointer;
+}
+
+#add {
+  position: relative;
+  top: -5px;
+  left: 470px;
+  color: var(--color);
+  font-size: 24pt;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+#add:hover {
+  background-color: #faecff;
+  cursor: pointer;
 }

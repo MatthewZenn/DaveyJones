@@ -27,16 +27,18 @@
         <button class="tabs">Deposit</button>
         <button class="tabs" id="withdraw">Withdraw</button>
       </span>
-      <div class="withdraw">
+      <div class="withdrawl">
+        <h3>Withdraw</h3>
         <select name="coin" id="coin">
           <option value="Bitcoin">Bitcoin</option>
         </select>
         <span class="networks">
           <button class="network">Bitcoin Network</button>
-          <button class="network" id="withdraw">Lightning Network</button>
+          <button class="network" id="light">Lightning Network</button>
         </span>
-        <input type="text" id="address">
-        <input type="text" id="ammount">
+        <input type="text" id="address" placeholder="Withdrawl address" readonly>
+        <span class="material-symbols-rounded" id="add">add</span>
+        <input type="text" id="ammount" placeholder="Withdrawl amount">
         <button id="submit">Withdraw BTC</button>
       </div>
     </div>
