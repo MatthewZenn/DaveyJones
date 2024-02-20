@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kraken Crypto Exchange</title>
+    <title>Sparrow Crypto Exchange</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -11,9 +11,10 @@
   </head>
   <body>
     <header>
-      <h1><img id="logo" src="Assets/logo.png" alt="">Kraken</h1>
+      <h1><img id="logo" src="Assets/logo.png" alt="">Sparrow</h1>
       <button class="buy">Buy Crypto</button>
-      <span class="material-symbols-rounded" id="account">account_circle</span>
+      <span class="material-symbols-rounded" id="dots">more_vert</span>
+      <span class="material-symbols-rounded" id="account">person</span>
     </header>
     <div class="panel">
       <button class="buttons"><span class="material-symbols-rounded" id="home">home</span>Home</button>
@@ -30,7 +31,10 @@
       <div class="withdrawl">
         <h3>Withdraw</h3>
         <select name="coin" id="coin">
-          <option value="Bitcoin">Bitcoin</option>
+          <option value="Bitcoin">Bitcoin (BTC)</option>
+          <option value="Bitcoin">Etherium</option>
+          <option value="Bitcoin">Monaro</option>
+          <option value="Bitcoin">Dogecoin</option>
         </select>
         <span class="networks">
           <button class="network">Bitcoin Network</button>
@@ -39,7 +43,7 @@
         <input type="text" id="address" placeholder="Withdrawl address" readonly>
         <span class="material-symbols-rounded" id="add">add</span>
         <input type="text" id="ammount" placeholder="Withdrawl amount">
-        <button id="submit">Withdraw BTC</button>
+        <button id="submit">Withdraw Coin</button>
       </div>
     </div>
     <script src="main.js" async defer></script>
